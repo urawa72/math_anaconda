@@ -1,6 +1,6 @@
 version: '3'
 services:
-  anaconda:
+  jupyter:
     build:
       context: .
       dockerfile: Dockerfile
