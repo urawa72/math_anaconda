@@ -1,11 +1,13 @@
 version: '3'
 services:
-  jupyter:
+  conda:
     build:
       context: .
       dockerfile: Dockerfile
-    image: anaconda
+    image: my_conda
     ports:
     - "8888:8888"
     volumes:
     - .:/workdir
+    tty: true
+    stdin_open: true
